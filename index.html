@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarePulse Memorial Hospital | Intelligent Appointment System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Emergency & Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-items">
+        <span class="emergency-chip">
+          <i class="fa-solid fa-truck-medical"></i> 24/7 ER Hotline: +1 (800) 911-CARE
+        </span>
+        <span class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i> 742 Evergreen Medical Pkwy
+        </span>
+      </div>
+      <div class="top-bar-items">
+        <span class="top-bar-item">
+          <i class="fa-regular fa-clock"></i> OPD: Mon - Sat 8:00 AM - 8:00 PM
+        </span>
+        <a href="doctor-portal.html" style="color: #38bdf8; font-weight: 600;">
+          <i class="fa-solid fa-lock"></i> Staff Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <span>CarePulse<span style="color: var(--secondary);">Hospital</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="departments.html" class="nav-link"><i class="fa-solid fa-hospital-user"></i> Departments</a></li>
+        <li><a href="doctors.html" class="nav-link"><i class="fa-solid fa-user-doctor"></i> Find Doctors</a></li>
+        <li><a href="my-appointments.html" class="nav-link"><i class="fa-solid fa-calendar-check"></i> My Appointments</a></li>
+        <li><a href="doctor-portal.html" class="nav-link"><i class="fa-solid fa-stethoscope"></i> Doctor Roster</a></li>
+        <li><a href="prompt-engineering-dossier.html" class="nav-link" style="color: #0284c7; font-weight: 700;"><i class="fa-solid fa-microchip"></i> AI Dossier</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="book-appointment.html" class="btn btn-primary">
+          <i class="fa-regular fa-calendar-plus"></i> Book Appointment
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Patient-First Healthcare</span>
+          <h1>Modern Medical Care, <span>Intelligently Scheduled</span></h1>
+          <p class="hero-text">
+            Skip long clinic queues. Connect with board-certified physicians across 8 specialized departments with verified instant appointment confirmation and smart symptom triaging.
+          </p>
+
+          <div class="hero-actions">
+            <a href="book-appointment.html" class="btn btn-primary btn-lg">
+              <i class="fa-regular fa-calendar-check"></i> Book Your Visit Now
+            </a>
+            <button class="btn btn-outline btn-lg open-ai-triage">
+              <i class="fa-solid fa-wand-magic-sparkles" style="color: #0284c7;"></i> AI Symptom Checker
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>98.5%</h3>
+              <p>On-Time Consultations</p>
+            </div>
+            <div class="stat-item">
+              <h3>28+</h3>
+              <p>Senior Specialists</p>
+            </div>
+            <div class="stat-item">
+              <h3>15 Mins</h3>
+              <p>Average Wait Time</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+              <div style="width: 54px; height: 54px; border-radius: 12px; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">
+                <i class="fa-solid fa-calendar-day"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; font-weight: 700;">Fast-Track OPD Booking</h4>
+                <p style="font-size: 0.85rem; color: #64748b;">Instant digital QR pass generation</p>
+              </div>
+            </div>
+
+            <div style="background: #f8fafc; border-radius: 12px; padding: 1.25rem; border: 1px solid #e2e8f0; margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                <span style="color: #64748b;">Today's Available Slots:</span>
+                <strong style="color: #10b981;">34 Open Slots</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+                <span style="color: #64748b;">Emergency Triage:</span>
+                <strong style="color: #0284c7;">Active & Ready</strong>
+              </div>
+            </div>
+
+            <a href="doctors.html" class="btn btn-outline-primary" style="width: 100%;">
+              Explore All Specialists <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-circle-check" style="color: #10b981; font-size: 1.2rem;"></i>
+              <div>
+                <strong style="font-size: 0.8rem; display: block;">Instant Slip</strong>
+                <span style="font-size: 0.7rem; color: #64748b;">Paperless Check-in</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-microchip" style="color: #0284c7; font-size: 1.2rem;"></i>
+              <div>
+                <strong style="font-size: 0.8rem; display: block;">AI Pre-Triage</strong>
+                <span style="font-size: 0.7rem; color: #64748b;">Zero misrouting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick AI Triage Banner -->
+    <div class="container">
+      <div class="triage-banner">
+        <div class="triage-text">
+          <h3>
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Unsure which department to choose?
+          </h3>
+          <p>
+            Use our built-in AuraCare AI triage tool to analyze your symptoms, evaluate emergency risk, and find the ideal specialist doctor in seconds.
+          </p>
+        </div>
+        <button class="triage-btn open-ai-triage">
+          <i class="fa-solid fa-stethoscope"></i> Check Symptoms Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Featured Departments Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Clinical Excellence</span>
+          <h2 class="section-title">Specialized Medical Departments</h2>
+          <p class="section-subtitle">
+            Advanced medical services backed by modern diagnostic laboratories and expert clinicians.
+          </p>
+        </div>
+
+        <div class="grid-4" id="home-depts-grid">
+          <!-- Department Card 1 -->
+          <div class="dept-card">
+            <div class="dept-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3 class="dept-title">Cardiology</h3>
+            <p class="dept-desc">Coronary care, echocardiograms, blood pressure management, and heart diagnostics.</p>
+            <div class="dept-meta">
+              <span><i class="fa-regular fa-clock"></i> ~15 mins wait</span>
+              <a href="book-appointment.html?dept=cardio" style="color: var(--primary); font-weight: 600;">Book &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Department Card 2 -->
+          <div class="dept-card">
+            <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="dept-title">Neurology</h3>
+            <p class="dept-desc">Stroke management, migraine clinics, nerve recovery, and brain diagnostics.</p>
+            <div class="dept-meta">
+              <span><i class="fa-regular fa-clock"></i> ~20 mins wait</span>
+              <a href="book-appointment.html?dept=neuro" style="color: var(--primary); font-weight: 600;">Book &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Department Card 3 -->
+          <div class="dept-card">
+            <div class="dept-icon"><i class="fa-solid fa-baby"></i></div>
+            <h3 class="dept-title">Pediatrics</h3>
+            <p class="dept-desc">Compassionate child wellness, developmental milestones, and routine immunization.</p>
+            <div class="dept-meta">
+              <span><i class="fa-regular fa-clock"></i> ~10 mins wait</span>
+              <a href="book-appointment.html?dept=pedia" style="color: var(--primary); font-weight: 600;">Book &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Department Card 4 -->
+          <div class="dept-card">
+            <div class="dept-icon"><i class="fa-solid fa-bone"></i></div>
+            <h3 class="dept-title">Orthopedics</h3>
+            <p class="dept-desc">Joint replacement, fracture trauma care, sports injuries, and rehabilitation.</p>
+            <div class="dept-meta">
+              <span><i class="fa-regular fa-clock"></i> ~15 mins wait</span>
+              <a href="book-appointment.html?dept=ortho" style="color: var(--primary); font-weight: 600;">Book &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="departments.html" class="btn btn-outline-primary">
+            View All 8 Departments & Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" style="background: #f1f5f9;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple 4-Step Process</span>
+          <h2 class="section-title">How CarePulse Works</h2>
+          <p class="section-subtitle">Effortless medical booking designed for patients of all ages.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.3rem; font-weight: bold;">1</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Choose Specialty</h4>
+            <p style="font-size: 0.875rem; color: #64748b;">Select your required department or use the AI symptom triage tool.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.3rem; font-weight: bold;">2</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Select Doctor & Time</h4>
+            <p style="font-size: 0.875rem; color: #64748b;">Browse verified doctor profiles and select an available time slot.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.3rem; font-weight: bold;">3</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Enter Patient Info</h4>
+            <p style="font-size: 0.875rem; color: #64748b;">Fill in contact details, age, and brief health notes for your physician.</p>
+          </div>
+
+          <div class="card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 1.3rem; font-weight: bold;">4</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Receive Digital Pass</h4>
+            <p style="font-size: 0.875rem; color: #64748b;">Instant appointment ID and printable verification QR slip.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prompt Engineering Highlight Callout -->
+    <section class="section" style="background: #ffffff;">
+      <div class="container">
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; border-radius: 20px; padding: 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+          <div style="max-width: 650px;">
+            <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; margin-bottom: 1rem;">
+              Academic & Technical Showcase
+            </span>
+            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">
+              Built With Systematic Prompt Engineering
+            </h2>
+            <p style="color: #94a3b8; font-size: 1rem; line-height: 1.7;">
+              This web application was engineered through a disciplined 6-phase prompt engineering lifecycle: Planning, UI/UX Design, Code Generation, Iterative Refinement, Boundary Testing, and Clinical Explanation.
+            </p>
+          </div>
+          <div>
+            <a href="prompt-engineering-dossier.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-code"></i> Inspect Prompts & Dossier
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4><i class="fa-solid fa-heart-pulse" style="color: #38bdf8;"></i> CarePulse Memorial Hospital</h4>
+          <p>
+            Delivering accessible, intelligent healthcare services with patient-centric digital appointment booking and clinical triage.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-title">Quick Pages</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="doctors.html">Doctor Directory</a></li>
+            <li><a href="book-appointment.html">Book Appointment</a></li>
+            <li><a href="my-appointments.html">My Appointments</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-title">Clinical Systems</h5>
+          <ul class="footer-links">
+            <li><a href="doctor-portal.html">Staff Consultation Portal</a></li>
+            <li><a href="prompt-engineering-dossier.html">Prompt Engineering Dossier</a></li>
+            <li><a href="#" class="open-ai-triage">AuraCare AI Triage</a></li>
+            <li><a href="my-appointments.html">Verify Appointment Slip</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-title">Contact & Help</h5>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-phone" style="color: #38bdf8; margin-right: 6px;"></i> +1 (800) 432-5888</li>
+            <li><i class="fa-solid fa-envelope" style="color: #38bdf8; margin-right: 6px;"></i> info@carepulse-hospital.org</li>
+            <li><i class="fa-solid fa-location-dot" style="color: #38bdf8; margin-right: 6px;"></i> 742 Evergreen Pkwy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 CarePulse Memorial Hospital. Developed via AI-Assisted Prompt Engineering.</div>
+        <div>Healthcare Prototype &bull; For Educational Demonstration</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ai-triage.js"></script>
+</body>
+</html>
+
